@@ -1,0 +1,34 @@
+*.kicad_prl
+
+*-backups/
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*.tmp
+*.tmp-bak
+*.old
+*.save
+
+fp-info-cache
+
+*.lock
+*.lck
+
+*.raw
+*.log
+*.cir.out
+
+# Fabrication/plot outputs (better put these in a dedicated /fabrication folder)
+# Gerbers & drills
+# *.gbr
+# *.gtl *.gbl *.gts *.gbs *.gto *.gbo *.gko *.gm1 *.gml *.gpt *.gpb
+# *.drl *.d356 *.map *.rpt
+# Assembly/position/BOM exports (only if you don’t want them versioned)
+# *-pos.csv
+# *-bom.csv
+# *.xml
+# Archives of fab packages
+# *.zip *.tar.gz
+
+.DS_Store
+Thumbs.db

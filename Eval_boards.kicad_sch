@@ -1,0 +1,144 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d7ecb1f3-4916-4ecb-8c6e-b89f175440e1")
+	(paper "A5")
+	(title_block
+		(title "Eval boards")
+		(date "2025-09-10")
+	)
+	(lib_symbols)
+	(sheet
+		(at 35.56 30.48)
+		(size 39.37 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2496e16d-36df-4fd7-aa3a-a883913c068b")
+		(property "Sheetname" "LED_DISPLAY"
+			(at 35.56 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_display.kicad_sch"
+			(at 35.56 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Eval_boards"
+				(path "/d7ecb1f3-4916-4ecb-8c6e-b89f175440e1"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 44.45)
+		(size 45.72 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2d18b93a-1164-4a37-b4a8-6b00efa1e253")
+		(property "Sheetname" "POWER_MANAGEMENT"
+			(at 113.03 43.7384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_management.kicad_sch"
+			(at 113.03 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Eval_boards"
+				(path "/d7ecb1f3-4916-4ecb-8c6e-b89f175440e1"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 34.29 91.44)
+		(size 33.02 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c1bad301-1130-4ba4-a2b1-bbd177210d24")
+		(property "Sheetname" "MCU"
+			(at 34.29 90.7284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 34.29 125.0446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Eval_boards"
+				(path "/d7ecb1f3-4916-4ecb-8c6e-b89f175440e1"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
