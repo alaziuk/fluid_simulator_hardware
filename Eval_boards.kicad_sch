@@ -9,8 +9,48 @@
 		(date "2025-09-10")
 	)
 	(lib_symbols)
+	(bus
+		(pts
+			(xy 95.25 66.04) (xy 95.25 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb78835-45e1-4c5d-ab26-cbde4c77202e")
+	)
+	(bus
+		(pts
+			(xy 62.23 58.42) (xy 62.23 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72082829-1299-4149-8b8f-aaa453328496")
+	)
+	(bus
+		(pts
+			(xy 95.25 87.63) (xy 67.31 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b219fa6-f6c9-48ab-88ed-74509f54d81a")
+	)
+	(bus
+		(pts
+			(xy 113.03 66.04) (xy 95.25 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8c5cc05-6acd-4ce3-93ff-47f901928082")
+	)
 	(sheet
-		(at 35.56 30.48)
+		(at 35.56 24.13)
 		(size 39.37 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26,7 +66,7 @@
 		)
 		(uuid "2496e16d-36df-4fd7-aa3a-a883913c068b")
 		(property "Sheetname" "LED_DISPLAY"
-			(at 35.56 29.7684 0)
+			(at 35.56 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35,12 +75,22 @@
 			)
 		)
 		(property "Sheetfile" "led_display.kicad_sch"
-			(at 35.56 65.3546 0)
+			(at 35.56 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{GPIOS}" input
+			(at 62.23 58.42 270)
+			(uuid "3a33e2b2-54c2-416c-bc8b-7aa41b2eb37f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -85,6 +135,16 @@
 				(justify left top)
 			)
 		)
+		(pin "{POWER}" output
+			(at 113.03 66.04 180)
+			(uuid "af7b0735-2bc9-41fb-a4c8-246f7e99bf02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Eval_boards"
 				(path "/d7ecb1f3-4916-4ecb-8c6e-b89f175440e1"
@@ -94,7 +154,7 @@
 		)
 	)
 	(sheet
-		(at 34.29 91.44)
+		(at 34.29 74.93)
 		(size 33.02 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -110,7 +170,7 @@
 		)
 		(uuid "c1bad301-1130-4ba4-a2b1-bbd177210d24")
 		(property "Sheetname" "MCU"
-			(at 34.29 90.7284 0)
+			(at 34.29 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -119,12 +179,32 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 34.29 125.0446 0)
+			(at 34.29 108.5346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{GPIOS}" output
+			(at 62.23 74.93 90)
+			(uuid "4c7fe4f8-7d29-4e6f-a584-a847be7f4129")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{POWER}" output
+			(at 67.31 87.63 0)
+			(uuid "3a184a21-d8f2-44d0-a388-8bee9db7bf68")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
