@@ -58,7 +58,88 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "starved_thermal|131400000|76400000|b9167798-a9ba-43b5-8d2c-0eacd3456452|3914cca2-1be3-4545-8ab6-5d2e237a5782|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|101750000|b9167798-a9ba-43b5-8d2c-0eacd3456452|a97e6660-5f69-4711-be51-e936e7d48f02|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|101750000|b9167798-a9ba-43b5-8d2c-0eacd3456452|a97e6660-5f69-4711-be51-e936e7d48f02|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|101750000|b9167798-a9ba-43b5-8d2c-0eacd3456452|a97e6660-5f69-4711-be51-e936e7d48f02|In1.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|102500000|b9167798-a9ba-43b5-8d2c-0eacd3456452|94dbbffd-b683-4689-a217-e1aaf204076c|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|102500000|b9167798-a9ba-43b5-8d2c-0eacd3456452|94dbbffd-b683-4689-a217-e1aaf204076c|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|102500000|b9167798-a9ba-43b5-8d2c-0eacd3456452|94dbbffd-b683-4689-a217-e1aaf204076c|In1.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|103250000|b9167798-a9ba-43b5-8d2c-0eacd3456452|d70b2bf4-9a2c-4c62-987c-6550b6ca612a|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|132350000|103250000|b9167798-a9ba-43b5-8d2c-0eacd3456452|d70b2bf4-9a2c-4c62-987c-6550b6ca612a|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|101750000|b9167798-a9ba-43b5-8d2c-0eacd3456452|e2870af4-0917-4bd3-a803-97fbf86c79fa|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|101750000|b9167798-a9ba-43b5-8d2c-0eacd3456452|e2870af4-0917-4bd3-a803-97fbf86c79fa|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|101750000|b9167798-a9ba-43b5-8d2c-0eacd3456452|e2870af4-0917-4bd3-a803-97fbf86c79fa|In1.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|102500000|b9167798-a9ba-43b5-8d2c-0eacd3456452|5890183d-017e-4d9c-abd8-f34cd7e7ec3d|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|102500000|b9167798-a9ba-43b5-8d2c-0eacd3456452|5890183d-017e-4d9c-abd8-f34cd7e7ec3d|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|102500000|b9167798-a9ba-43b5-8d2c-0eacd3456452|5890183d-017e-4d9c-abd8-f34cd7e7ec3d|In1.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|103250000|b9167798-a9ba-43b5-8d2c-0eacd3456452|274ef38b-414b-4899-8441-12a0206b8a05|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133050000|103250000|b9167798-a9ba-43b5-8d2c-0eacd3456452|274ef38b-414b-4899-8441-12a0206b8a05|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133600000|76400000|b9167798-a9ba-43b5-8d2c-0eacd3456452|74634fe2-8568-4ec5-a525-d51aba12a2c9|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133600000|76400000|b9167798-a9ba-43b5-8d2c-0eacd3456452|74634fe2-8568-4ec5-a525-d51aba12a2c9|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133600000|78600000|b9167798-a9ba-43b5-8d2c-0eacd3456452|cd0819bb-a0ae-4076-85f3-e6441e79ee36|B.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -454,7 +535,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -544,16 +625,76 @@
           "show": true
         },
         {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
           "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "AVAILABILITY",
+          "name": "AVAILABILITY",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PACKAGE",
+          "name": "PACKAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PRICE",
+          "name": "PRICE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         },
         {
           "group_by": true,
@@ -572,26 +713,14 @@
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
           "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Oznaczenie"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -649,6 +778,10 @@
     [
       "2d18b93a-1164-4a37-b4a8-6b00efa1e253",
       "POWER_MANAGEMENT"
+    ],
+    [
+      "8b5c4eb3-9c02-477c-8af4-4b02c637b128",
+      "ACCELEROMETER"
     ]
   ],
   "text_variables": {}
